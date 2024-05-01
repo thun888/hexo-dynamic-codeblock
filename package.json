@@ -1,0 +1,22 @@
+{
+  "name": "hexo-dynamic-codeblock",
+  "version": "1.0.0",
+  "description": "Through the online interface, the online code is dynamically obtained and displayed in article.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thun888/hexo-dynamic-codeblock.git"
+  },
+  "keywords": [
+    "dynamic-codeblock"
+  ],
+  "author": "thun888",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thun888/hexo-dynamic-codeblock/issues"
+  },
+  "homepage": "https://github.com/thun888/hexo-dynamic-codeblock#readme"
+}
