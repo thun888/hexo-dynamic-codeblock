@@ -4,15 +4,20 @@ hexo.extend.tag.register('coding', function (args) {
   if (hexo.config.dynamic_codeblock) {
     var api = hexo.config.dynamic_codeblock.api;
   } else {
-    console.log('[hexo-dynamic-codeblock] error: missing dynamic_codeblock.api');
+    console.log('[hexo-dynamic-codeblock] error: missing dynamic_codeblock config');
   }
-  var jsurl = api + '?usejson=true&url=' + encodeURIComponent(url);
+  var jsurl = api + '?&url=' + encodeURIComponent(url);
   if (lang) {
     jsurl += '&lang=' + encodeURIComponent(lang);
   }
+  if (hexo.config.dynamic_codeblock.loading) {
+    jsurl += '&usejson=true';
+  }
+  if (!hexo.config.dynamic_codeblock.showsupporter) {
+    jsurl += '&showsupporter=false';
+  }
   // 生成随机id
   coding_id = 'coding-' + Math.random().toString(36).substr(2, 9);
-  
   if (hexo.config.dynamic_codeblock.loading) {
     return `
     <div class="tag-plugin ds-coding" id="${coding_id}"></div>
