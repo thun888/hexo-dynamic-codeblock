@@ -1,6 +1,6 @@
 {
   "name": "hexo-dynamic-codeblock",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Through the online interface, the online code is dynamically obtained and displayed in article.",
   "main": "index.js",
   "scripts": {

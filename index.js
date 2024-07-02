@@ -6,7 +6,7 @@ hexo.extend.tag.register('coding', function (args) {
   } else {
     console.log('[hexo-dynamic-codeblock] error: missing dynamic_codeblock config');
   }
-  var jsurl = api + '?&url=' + encodeURIComponent(url);
+  var jsurl = api + '?url=' + encodeURIComponent(url);
   if (lang) {
     jsurl += '&lang=' + encodeURIComponent(lang);
   }
